@@ -1,0 +1,5 @@
+ENTRY "projects" URL "/Users/me/data/projects"
+ENTRY "downloads" URL "/Users/me/Downloads"
+ENTRY "desktop" URL "/Users/me/Desktop"
+ENTRY "data" URL "/Users/me/data"
+ENTRY "home" URL "/Users/me"

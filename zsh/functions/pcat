@@ -1,0 +1,12 @@
+
+##
+# Search for $1 in parent directory tree.
+#
+pcat () {
+    _pwd=$PWD
+    test / = "$PWD" && return \
+	    || test -f "$1" && cat $1 && return \
+	    || cd .. && pcat $1
+    cd $_pwd
+}
+

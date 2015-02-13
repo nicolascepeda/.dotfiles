@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+msource () {
+    for file ($DOTFILES_HOME/zsh/$1/*.zsh(N)); do
+        source $file
+    done
+}
+
+fpath=($DOTFILES_HOME/zsh/functions $fpath)
+
+msource "default"
+msource "custom"
+msource "custom/arch/$(uname)"
+msource "custom/host/$(hostname -s)"
+msource "private"
+

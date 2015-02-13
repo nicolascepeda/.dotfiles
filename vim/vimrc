@@ -1,0 +1,99 @@
+
+" Tell pathogen to load all plugins
+" Regenerate helptags with :Helptags
+execute pathogen#infect()
+
+" Some sensitive defaults
+filetype plugin indent on
+set autoindent
+set clipboard=unnamed        " clipboard sharing with host
+set cindent
+set encoding=utf-8
+set expandtab
+set list
+set listchars=tab:▸\ ,trail:▫
+set ignorecase
+set incsearch
+set mouse=a
+set shiftwidth=2
+set smartindent
+set softtabstop=2
+set smartcase
+set tabstop=8
+set wildignore+=*/target/*,*.swp,*/node_modules/*
+hi Visual term=reverse cterm=reverse guibg=LightGrey 
+
+" Filetype mappings
+" Force markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" Solarized color theme (dark)
+" Credits: https://github.com/altercation/solarized
+" Fixes for iTerm & osx
+" http://stackoverflow.com/questions/7278267/incorrect-colors-with-vim-in-iterm2-using-solarized
+syntax on
+set background=dark
+let g:solarized_termtrans = 1
+let g:solarized_termcolors=256
+colorscheme solarized
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
+
+" Airline.vim
+let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
+let g:airline_enable_syntastic = 1
+set noshowmode " Don't show the current mode (airline.vim takes care of us)
+
+" Rainbow Parens
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['blue',        'RoyalBlue3'],
+    \ ['green',      'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+" 
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" Rebind ultisnippets completion key
+" as it interferes with youcompleteme
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" CtrlP
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+      \ 'file': '\v\.(exe|so|dll)$',
+      \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+      \ }
+
+" Keyboard shortcuts
+" Use custom leader key
+let mapleader = ","
+inoremap jj <esc>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>l :Align
+" nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>p :CtrlPClearCache<CR>:CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
+

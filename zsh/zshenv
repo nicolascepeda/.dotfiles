@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+export DOTFILES_HOME="$HOME/.dotfiles"
+export DOTFILES_VIM="$DOTFILES_HOME/vim"
+export DOTFILES_ZSH="$DOTFILES_HOME/zsh"
+
+msource () {
+    for file ($DOTFILES_HOME/zsh/$1/*.env(N)); do
+        source $file
+    done
+}
+
+msource "default"
+msource "custom"
+msource "custom/arch/$(uname)"
+msource "custom/host/$(hostname -s)"
+msource "private"
+
+typeset -U path
+
