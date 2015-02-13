@@ -1,0 +1,72 @@
+[submodule "vim/bundle/vim-clojure-highlight"]
+	path = vim/bundle/vim-clojure-highlight
+	url = git@github.com:guns/vim-clojure-highlight.git
+[submodule "vim/bundle/rainbow_parentheses.vim"]
+	path = vim/bundle/rainbow_parentheses.vim
+	url = git@github.com:kien/rainbow_parentheses.vim.git
+[submodule "vim/bundle/vim-clojure-static"]
+	path = vim/bundle/vim-clojure-static
+	url = git@github.com:guns/vim-clojure-static.git
+[submodule "vim/bundle/vim-classpath"]
+	path = vim/bundle/vim-classpath
+	url = git@github.com:tpope/vim-classpath.git
+[submodule "vim/bundle/vim-projectionist"]
+	path = vim/bundle/vim-projectionist
+	url = git@github.com:tpope/vim-projectionist.git
+[submodule "vim/bundle/vim-sensible"]
+	path = vim/bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "vim/bundle/vim-leiningen"]
+	path = vim/bundle/vim-leiningen
+	url = git@github.com:tpope/vim-leiningen.git
+[submodule "vim/bundle/vim-dispatch"]
+	path = vim/bundle/vim-dispatch
+	url = git@github.com:tpope/vim-dispatch.git
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "vim/bundle/vim-fireplace"]
+	path = vim/bundle/vim-fireplace
+	url = git@github.com:tpope/vim-fireplace.git
+[submodule "vim/bundle/vim-json"]
+	path = vim/bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
+[submodule "vim/bundle/tlib_vim"]
+	path = vim/bundle/tlib_vim
+	url = git@github.com:tomtom/tlib_vim.git
+[submodule "vim/bundle/vim-addon-mw-utils"]
+	path = vim/bundle/vim-addon-mw-utils
+	url = git@github.com:MarcWeber/vim-addon-mw-utils.git
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule "vim/bundle/vim-snippets"]
+	path = vim/bundle/vim-snippets
+	url = git@github.com:honza/vim-snippets.git
+[submodule "vim/bundle/UltiSnips"]
+	path = vim/bundle/UltiSnips
+	url = git@github.com:vim-scripts/UltiSnips.git
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "vim/bundle/vim-sexp-mappings-for-regular-people"]
+	path = vim/bundle/vim-sexp-mappings-for-regular-people
+	url = git@github.com:tpope/vim-sexp-mappings-for-regular-people.git
