@@ -107,7 +107,7 @@ git config --global core.excludesfile "$dothome/gitignore-global"
 # Others
 echo
 echo "Copying fonts"
-cp "$dothome/fonts/*" "/Library/Fonts"
+cp $dothome'/fonts/*' "/Library/Fonts"
 
 echo
 echo "Done!"
