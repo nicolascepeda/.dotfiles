@@ -9,6 +9,7 @@ target
 .lein-*
 doc/tags
 *.swp
+.idea
 
 # Binaries
 *.pyc
