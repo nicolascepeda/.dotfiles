@@ -34,6 +34,7 @@ alias sudo='sudo '
 
 # tmux
 alias t='tmux'
+alias ts='t new -s '
 alias tll='t ls'
 alias ta='t attach -t '
 alias td='t detach'
