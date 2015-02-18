@@ -42,7 +42,7 @@ colorscheme solarized
 " Airline.vim
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
-let g:airline_enable_syntastic = 1
+let g:airline#extensions#tabline#enabled = 1
 set noshowmode " Don't show the current mode (airline.vim takes care of us)
 
 " Rainbow Parens
