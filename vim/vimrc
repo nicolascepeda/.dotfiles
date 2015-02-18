@@ -48,7 +48,7 @@ set laststatus=2
 set noshowmode " Don't show the current mode (airline.vim takes care of us)
 
 " NERDTree
-autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
+"autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
 
 " Rainbow Parens
 let g:rbpt_colorpairs = [
