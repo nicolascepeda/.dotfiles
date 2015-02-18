@@ -35,12 +35,14 @@ alias sudo='sudo '
 # tmux
 alias t='tmux'
 alias ts='t new -s '
-alias tll='t ls'
+alias tl='t ls'
 alias ta='t attach -t '
 alias td='t detach'
 
 alias v='vagrant'
 alias vx='vagrant-exec'
+
+alias y='pbcopy <'
 
 function vim_pathogen() {
     echo "Downloading to '$DOTFILES_VIM/bundle'"
