@@ -53,6 +53,7 @@ echo "Installing brew dependencies..."
 brew install reattach-to-user-namespace cmake ctags
 brew install macvim 
 brew install fig
+brew install coreutils
 
 function bkp() {
     echo "Baking up $HOME/$1 to $HOME/$1.bak.$cdate"
