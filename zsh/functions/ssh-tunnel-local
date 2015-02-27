@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+sport="$( $1 | cut -d ':' -f 1 )"
+host="$( $1 | cut -d ':' -f 2 )"
+dport="$( $1 | cut -d ':' -f 3 )"
+
+if [[ -z "$sport" || -z "$dport" || -z "$host" ]]; then
+  echo "Error: Invalid host syntax. Expecting sport:host:dport!"
+  echo 
+  echo "Usage: $( basename $0 ) <sport:host:dport> [<as user>] [opts]"
+  exit 1
+fi
+
+suser="$2"
+if [ ! -z "$user" ]; then
+  suser="${USER}@"
+fi
+
+echo ssh -f "${suser}@${host}" -L "${sport}:${host}:${dport}" -N $@

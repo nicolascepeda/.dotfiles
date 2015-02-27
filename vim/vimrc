@@ -101,4 +101,4 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>t :TagbarToggle<CR>
-
+vnoremap <leader>ci :Tabularize /:as\\|:refer<CR>
