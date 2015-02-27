@@ -20,7 +20,7 @@ set smartindent
 set softtabstop=2
 set smartcase
 set tabstop=8
-set wildignore+=*/target/*,*.swp,*/node_modules/*
+set wildignore+=*/target/*,*/bower_components/*,*.swp,*/node_modules/*
 hi Visual term=reverse cterm=reverse guibg=LightGrey 
 
 " Filetype mappings
@@ -98,7 +98,8 @@ nnoremap <leader>l :Align
 " nnoremap <leader>p :CtrlP<CR>
 nnoremap <leader>p :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>t :CtrlPTag<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
-nnoremap <leader>t :TagbarToggle<CR>
+"nnoremap <leader>t :TagbarToggle<CR>
 vnoremap <leader>ci :Tabularize /:as\\|:refer<CR>
