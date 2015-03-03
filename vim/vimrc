@@ -20,7 +20,7 @@ set smartindent
 set softtabstop=2
 set smartcase
 set tabstop=8
-set wildignore+=*/target/*,*/bower_components/*,*.swp,*/node_modules/*
+set wildignore+=*/target/*,*/dist/*,*/bower_components/*,*.swp,*/node_modules/*
 hi Visual term=reverse cterm=reverse guibg=LightGrey 
 
 " Filetype mappings
