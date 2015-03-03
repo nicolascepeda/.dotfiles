@@ -50,7 +50,7 @@ git clone $_repo "$dothome" &> /dev/null
 # Install brew dependencies
 echo
 echo "Installing brew dependencies..."
-brew install reattach-to-user-namespace cmake ctags
+brew install git reattach-to-user-namespace cmake ctags
 brew install macvim 
 brew install fig
 brew install coreutils
