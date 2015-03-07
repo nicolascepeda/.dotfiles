@@ -32,6 +32,9 @@ alias pp='p $path'
 alias psa="ps aux | grep "
 
 alias sudo='sudo '
+# Assume ~/.ssh/config has a Host definition
+# setting credentials & co
+alias ssht='ssh -f -N '
 
 # tmux
 alias t='tmux'
