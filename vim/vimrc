@@ -20,8 +20,8 @@ set smartindent
 set softtabstop=2
 set smartcase
 set tabstop=8
-set wildignore+=*/target/*,*/bower_components/*,*.swp,*/node_modules/*
-hi Visual term=reverse cterm=reverse guibg=LightGrey 
+set wildignore+=*/target/*,*/dist/*,*/bower_components/*,*.swp,*/node_modules/*
+hi Visual term=reverse cterm=reverse guibg=LightGrey
 
 " Filetype mappings
 " Force markdown
@@ -69,7 +69,7 @@ let g:rbpt_colorpairs = [
     \ ['darkred',     'DarkOrchid3'],
     \ ['red',         'firebrick3'],
     \ ]
-" 
+"
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
@@ -88,6 +88,15 @@ let g:ctrlp_custom_ignore = {
       \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
       \ }
 
+" Credit: http://github.com/mathiasbynens/dotfiles/
+function! StripWhitespace ()
+  let save_cursor = getpos('.')
+  let old_query = getreg('/')
+  :%s/\s\+$//e
+  call setpos('.', save_cursor)
+  call setreg('/', old_query)
+endfunction
+
 " Keyboard shortcuts
 " Use custom leader key
 let mapleader = ","
@@ -103,3 +112,5 @@ nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
 "nnoremap <leader>t :TagbarToggle<CR>
 vnoremap <leader>ci :Tabularize /:as\\|:refer<CR>
+noremap <leader>ss :call StripWhitespace()<CR>
+autocmd BufWritePre <buffer> call StripWhitespace()
