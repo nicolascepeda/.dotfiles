@@ -73,3 +73,6 @@
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/vim-web-indent"]
+	path = vim/bundle/vim-web-indent
+	url = git@github.com:lukaszb/vim-web-indent.git

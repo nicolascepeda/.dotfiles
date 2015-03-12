@@ -101,6 +101,8 @@ endfunction
 " Use custom leader key
 let mapleader = ","
 inoremap jj <esc>
+" indent a buffer
+nnoremap <leader>= gg=G<CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>l :Align
