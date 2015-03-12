@@ -76,3 +76,9 @@
 [submodule "vim/bundle/vim-web-indent"]
 	path = vim/bundle/vim-web-indent
 	url = git@github.com:lukaszb/vim-web-indent.git
+[submodule "vim/bundle/html5-syntax.vim"]
+	path = vim/bundle/html5-syntax.vim
+	url = git@github.com:othree/html5-syntax.vim.git
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
