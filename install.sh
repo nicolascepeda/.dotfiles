@@ -50,8 +50,8 @@ git clone $_repo "$dothome" &> /dev/null
 # Install brew dependencies
 echo
 echo "Installing brew dependencies..."
-brew install git reattach-to-user-namespace cmake ctags
-brew install macvim 
+brew install git reattach-to-user-namespace cmake ctags tmux
+brew install macvim --env-std --override-system-vim
 brew install fig
 brew install coreutils
 
@@ -94,7 +94,7 @@ ln -s "$thome" "$HOME/.tmux"
 bkp .tmux.conf
 ln -s ".tmux/tmux.conf" "$HOME/.tmux.conf"
 
-echo 
+echo
 echo "Installing mc... ~/.mc"
 bkp .mc
 ln -s "$dothome/mc" "$HOME/.mc"
