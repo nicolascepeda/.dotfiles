@@ -42,6 +42,8 @@ alias ts='t new -s '
 alias tl='t ls'
 alias ta='t attach -t '
 alias td='t detach'
+alias tm='t move-window'
+alias tms=' tm -t'
 
 alias v='vagrant'
 alias vx='vagrant-exec'
