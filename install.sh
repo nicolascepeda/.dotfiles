@@ -96,7 +96,8 @@ ln -s ".tmux/tmux.conf" "$HOME/.tmux.conf"
 echo
 echo "Installing mc... ~/.mc"
 bkp .mc
-ln -s "$dothome/mc" "$HOME/.mc"
+mkdir -p "$HOME/.config"
+ln -s "$dothome/mc" "$HOME/.config/mc"
 
 # Git
 echo

@@ -25,7 +25,7 @@ alias l='ls -lh'
 alias ll='ls -lha'
 
 alias mk='mkdir -p'
-alias mc='MC_SKIN="$HOME/.mc/nicedark.ini" mc'
+alias mc='MC_SKIN="$HOME/.config/mc/nicedark.ini" mc'
 
 alias p='print -l'
 alias pp='p $path'
