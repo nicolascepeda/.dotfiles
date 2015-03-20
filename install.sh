@@ -50,10 +50,9 @@ git clone $_repo "$dothome" &> /dev/null
 # Install brew dependencies
 echo
 echo "Installing brew dependencies..."
-brew install git reattach-to-user-namespace cmake ctags
-brew install macvim 
-brew install fig
-brew install coreutils
+brew install git reattach-to-user-namespace cmake ctags tmux
+brew install macvim --env-std --override-system-vim
+brew install coreutils mc
 
 function bkp() {
     echo "Baking up $HOME/$1 to $HOME/$1.bak.$cdate"
@@ -94,10 +93,11 @@ ln -s "$thome" "$HOME/.tmux"
 bkp .tmux.conf
 ln -s ".tmux/tmux.conf" "$HOME/.tmux.conf"
 
-echo 
+echo
 echo "Installing mc... ~/.mc"
 bkp .mc
-ln -s "$dothome/mc" "$HOME/.mc"
+mkdir -p "$HOME/.config"
+ln -s "$dothome/mc" "$HOME/.config/mc"
 
 # Git
 echo
