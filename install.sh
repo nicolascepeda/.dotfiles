@@ -50,9 +50,17 @@ git clone $_repo "$dothome" &> /dev/null
 # Install brew dependencies
 echo
 echo "Installing brew dependencies..."
-brew install git reattach-to-user-namespace cmake ctags tmux
+brew install \
+  git \
+  reattach-to-user-namespace \
+  cmake \
+  ctags \
+  tmux \
+  wget \
+  mvn \
+  coreutils \
+  mc
 brew install macvim --env-std --override-system-vim
-brew install coreutils mc
 
 function bkp() {
     echo "Baking up $HOME/$1 to $HOME/$1.bak.$cdate"
