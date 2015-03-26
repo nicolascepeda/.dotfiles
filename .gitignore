@@ -2,3 +2,4 @@
 tags
 third_party/ycmd
 *.gen
+mc/hotlist
