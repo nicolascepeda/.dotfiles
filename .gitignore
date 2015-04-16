@@ -5,3 +5,4 @@ third_party/ycmd
 mc/hotlist*
 tmux/plugins
 tmux/resurrect
+mc/panels.ini

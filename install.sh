@@ -59,7 +59,8 @@ brew install \
   wget \
   mvn \
   coreutils \
-  mc
+  mc \
+  the_silver_searcher
 brew install macvim --env-std --override-system-vim
 
 function bkp() {

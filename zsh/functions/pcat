@@ -1,12 +1,12 @@
+#!/usr/bin/env bash
 
 ##
-# Search for $1 in parent directory tree.
+# Return abs of $1 in parent directories.
 #
-pcat () {
+findf() {
     _pwd=$PWD
     test / = "$PWD" && return \
-	    || test -f "$1" && cat $1 && return \
-	    || cd .. && pcat $1
+            || test -e "$1" && echo "$_pwd/$1" && return \
+            || cd .. && findf $1
     cd $_pwd
 }
-
