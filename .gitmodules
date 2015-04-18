@@ -88,3 +88,6 @@
 [submodule "vim/bundle/ag.vim"]
 	path = vim/bundle/ag.vim
 	url = https://github.com/rking/ag.vim
+[submodule "vim/plugin/vim-less"]
+	path = vim/plugin/vim-less
+	url = git@github.com:groenewege/vim-less.git
