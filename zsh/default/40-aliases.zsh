@@ -8,6 +8,7 @@ alias f='grep -r'
 # Git related aliases
 # See http://nuclearsquid.com/writings/git-tricks-tips-workflows/
 alias g='git'
+alias gl='g log --graph --decorate --all --oneline'
 alias gs='g status'
 alias ga='g add '
 alias gc='g commit -m'
