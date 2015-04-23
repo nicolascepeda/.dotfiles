@@ -138,5 +138,5 @@ vnoremap ∆ :m '<-2<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 vnoremap <A-Up> :m '<-2<CR>gv=gv
 
-"" Always show open file in NERDTRee
-autocmd BufEnter * lcd %:p:h
+"Always show open file in NERDTRee
+autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
