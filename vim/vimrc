@@ -26,6 +26,7 @@ hi Visual term=reverse cterm=reverse guibg=LightGrey
 " Filetype mappings
 " Force markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.boot set filetype=clojure
 
 " Solarized color theme (dark)
 " Credits: https://github.com/altercation/solarized
@@ -100,7 +101,8 @@ function! StripWhitespace ()
 endfunction
 
 " Keyboard shortcuts
-" Use custom leader key
+" Use custom jeader key
+let maplocalleader = "`"
 let mapleader = ","
 inoremap jj <esc>
 " indent a buffer
