@@ -28,7 +28,7 @@ alias ll='ls -lha'
 alias mk='mkdir -p'
 alias mc='MC_SKIN="$HOME/.config/mc/nicedark.ini" mc'
 
-alias p='cd /code/contovista/'
+alias p='cd ~/code/contovista/'
 alias pp='p $path'
 alias psa="ps aux | grep "
 
